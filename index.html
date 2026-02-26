@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pegs Easy Gourmet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Pegs Easy Gourmet</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Personal &amp; Private Chef · Kamloops, BC</p>
+      <h1>Real Food You Can<br /><em>Actually Pronounce</em></h1>
+      <p class="hero-sub">Get some balance in your life and eat real food that you can pronounce. Sweet &amp; savoury made from scratch for groups of 2 to 50.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-green">View Menu</a>
+        <a href="#book" class="btn btn-magenta">Book Now</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-tag">Peg's Story</span>
+        <h2>"How Hard<br />Can It Be?"</h2>
+        <p>Peg started cooking at age 8 with an apple pie, and never really stopped. While her mother worked full-time, Peg became the family's head chef — a role she took on with the same fearless curiosity that's defined her ever since.</p>
+        <p>After years in retail and restaurant management, she opened <strong>Juniper Cafe &amp; Bistro</strong> in Edmonton — the perfect training ground for large-scale cooking and baking. In 2019, she relocated to Kamloops and shifted her focus to what she loves most: cooking for people who appreciate real food, made with care.</p>
+        <p><em>"Just eat something!!"</em></p>
+        <a href="#book" class="btn btn-outline-magenta">Get in Touch</a>
+      </div>
+      <div class="about-card">
+        <div class="about-card-inner">
+          <div class="stat"><span class="stat-num">2–50</span><span class="stat-label">Guests Served</span></div>
+          <div class="stat"><span class="stat-num">Sweet</span><span class="stat-label">&amp; Savoury</span></div>
+          <div class="stat"><span class="stat-num">Years</span><span class="stat-label">of Experience</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Scratch-Made</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <span class="section-tag">What We Serve</span>
+      <h2>Sweet &amp; Savoury</h2>
+      <p class="section-sub">Everything made from scratch. Full menus available on request — just ask Peg.</p>
+
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="savoury">Savoury</button>
+        <button class="filter-btn" data-filter="sweet">Sweet</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card" data-category="savoury">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #A8D5A2, #5BAD6F);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag main">Savoury</span>
+            <h3>Chef's Dinner for Two</h3>
+            <p>A fully personalised multi-course meal prepared in your home, tailored to your tastes and dietary needs.</p>
+          </div>
+        </div>
+        <div class="menu-card" data-category="savoury">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #7BC8A4, #A8D5A2);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag main">Savoury</span>
+            <h3>Group Feast (up to 50)</h3>
+            <p>Hearty, crowd-pleasing mains and sides for events large and small — all cooked with care from real ingredients.</p>
+          </div>
+        </div>
+        <div class="menu-card" data-category="savoury">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #D4709A, #C2548A);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag main">Savoury</span>
+            <h3>Bespoke Event Menu</h3>
+            <p>Work with Peg to design a custom menu around your occasion, season, and preferences.</p>
+          </div>
+        </div>
+        <div class="menu-card" data-category="sweet">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #C2548A, #9E3570);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag dessert">Sweet</span>
+            <h3>Large Desserts &amp; Cakes</h3>
+            <p>Show-stopping layer cakes, tarts, and celebration desserts baked from scratch for any occasion.</p>
+          </div>
+        </div>
+        <div class="menu-card" data-category="sweet">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #A8D5A2, #C2548A);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag dessert">Sweet</span>
+            <h3>Baked Goods &amp; Treats</h3>
+            <p>Cookies, squares, muffins, and small bites — perfect for gatherings, gifts, or just because.</p>
+          </div>
+        </div>
+        <div class="menu-card" data-category="sweet">
+          <div class="menu-card-img" style="--grad: linear-gradient(135deg, #9E3570, #5BAD6F);"></div>
+          <div class="menu-card-body">
+            <span class="menu-tag dessert">Sweet</span>
+            <h3>Custom Sweet Orders</h3>
+            <p>Have something specific in mind? Peg loves a challenge — get in touch and let's make it happen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="section book" id="book">
+    <div class="container book-grid">
+      <div class="book-text">
+        <span class="section-tag">Order &amp; Enquire</span>
+        <h2>Let's Make<br />Something Delicious</h2>
+        <p>Fill in the form and Peg will be in touch to chat about what you're after. No event too big or too small.</p>
+        <ul class="book-perks">
+          <li>Sweet &amp; savoury options</li>
+          <li>Groups from 2 to 50 people</li>
+          <li>Dietary needs accommodated</li>
+          <li>Everything made from scratch</li>
+        </ul>
+      </div>
+      <form class="book-form" id="bookForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
+          </div>
+          <div class="form-group">
+            <label for="eventDate">Event Date *</label>
+            <input type="date" id="eventDate" name="eventDate" />
+            <span class="form-error" id="dateError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of Guests *</label>
+            <input type="number" id="guests" name="guests" placeholder="e.g. 40" min="1" />
+            <span class="form-error" id="guestsError"></span>
+          </div>
+          <div class="form-group">
+            <label for="eventType">Event Type *</label>
+            <select id="eventType" name="eventType">
+              <option value="">Select type…</option>
+              <option>Private Dinner (2–10)</option>
+              <option>Party or Gathering</option>
+              <option>Corporate Event</option>
+              <option>Birthday Celebration</option>
+              <option>Wedding or Reception</option>
+              <option>Baked Goods / Sweet Order</option>
+              <option>Other</option>
+            </select>
+            <span class="form-error" id="typeError"></span>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="message">Additional Details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your vision, dietary requirements, or any special requests…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-magenta btn-full">Send Enquiry</button>
+        <div class="form-success" id="formSuccess">
+          Thank you! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">Find Us</span>
+        <h2>Get in Touch</h2>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Location</strong>
+              <p>Kamloops, BC<br />Canada</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.64 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <p>778-767-2704</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p>pegseasygourmet@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Map placeholder<br /><small>Replace with Google Maps embed</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Pegs Easy Gourmet</p>
+      <p class="footer-copy">&copy; 2026 Pegs Easy Gourmet. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

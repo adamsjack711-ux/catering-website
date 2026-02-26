@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Pegs Easy Gourmet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Pegs Easy Gourmet</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="index.html#book">Book</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="gallery-header">
+    <div class="container">
+      <span class="section-tag">Behind the Scenes</span>
+      <h1>The Gallery</h1>
+      <p>A peek into Peg's kitchen — real food, made with love.</p>
+    </div>
+  </header>
+
+  <!-- FILTER -->
+  <div class="gallery-filter-bar">
+    <div class="container">
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="savoury">Savoury</button>
+        <button class="filter-btn" data-filter="sweet">Sweet</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <main class="gallery-main">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- To add real photos: replace the <div class="gallery-img-placeholder"> with:
+             <img src="images/your-photo.jpg" alt="Description" />
+             and remove the style="--grad:..." attribute from the .gallery-item div -->
+
+        <div class="gallery-item tall" data-category="savoury" data-caption="Herb-roasted chicken with seasonal vegetables">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#A8D5A2,#5BAD6F);"></div>
+          <div class="gallery-overlay"><span>Herb Roasted Chicken</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="sweet" data-caption="Triple layer celebration cake">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#C2548A,#9E3570);"></div>
+          <div class="gallery-overlay"><span>Celebration Cake</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="events" data-caption="Dinner party setup for 20 guests">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#7BC8A4,#A8D5A2);"></div>
+          <div class="gallery-overlay"><span>Dinner Party for 20</span></div>
+        </div>
+
+        <div class="gallery-item wide" data-category="sweet" data-caption="Fresh baked goods — cookies, squares & muffins">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#D4709A,#C2548A);"></div>
+          <div class="gallery-overlay"><span>Fresh Baked Goods</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="savoury" data-caption="Slow-braised short rib with root vegetables">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#5BAD6F,#3d8f52);"></div>
+          <div class="gallery-overlay"><span>Braised Short Rib</span></div>
+        </div>
+
+        <div class="gallery-item tall" data-category="sweet" data-caption="Lemon tart with fresh raspberries">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#f0c6db,#C2548A);"></div>
+          <div class="gallery-overlay"><span>Lemon Raspberry Tart</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="events" data-caption="Canapés for a corporate event">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#A8D5A2,#C2548A);"></div>
+          <div class="gallery-overlay"><span>Corporate Canapés</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="savoury" data-caption="Roasted salmon with dill cream sauce">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#9E3570,#5BAD6F);"></div>
+          <div class="gallery-overlay"><span>Roasted Salmon</span></div>
+        </div>
+
+        <div class="gallery-item wide" data-category="events" data-caption="Birthday dinner spread — feast for 40">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#5BAD6F,#A8D5A2);"></div>
+          <div class="gallery-overlay"><span>Birthday Feast for 40</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="sweet" data-caption="Assorted holiday cookies & squares">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#C2548A,#f0c6db);"></div>
+          <div class="gallery-overlay"><span>Holiday Cookies</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="savoury" data-caption="House-made pasta with garden pesto">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#3d8f52,#7BC8A4);"></div>
+          <div class="gallery-overlay"><span>Garden Pesto Pasta</span></div>
+        </div>
+
+        <div class="gallery-item tall" data-category="events" data-caption="Intimate private dining setup">
+          <div class="gallery-img-placeholder" style="--grad: linear-gradient(160deg,#9E3570,#C2548A);"></div>
+          <div class="gallery-overlay"><span>Private Dining</span></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA STRIP -->
+  <section class="gallery-cta">
+    <div class="container gallery-cta-inner">
+      <h2>Like what you see?</h2>
+      <p>Get in touch and let's create something delicious together.</p>
+      <a href="index.html#book" class="btn btn-magenta">Book Peg</a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-img-wrap" id="lightboxImgWrap"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Pegs Easy Gourmet</p>
+      <p class="footer-copy">&copy; 2026 Pegs Easy Gourmet. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
